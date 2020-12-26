@@ -1,0 +1,89 @@
+//Color variables
+$nav-bg-color: #18181d;
+$white-color: #fff;
+$nav-border-color: #2e2e2e;
+$nav-heading-color: #84848e;
+$item-active-color: #465ac0;
+
+.Navigation {
+  background-color: $nav-bg-color;
+  border-right: 1px solid $nav-border-color;
+  display: grid;
+  grid-area: Navigation;
+  grid-template-areas:
+          'Navigation__logo-box'
+          'Navigation__menu'
+          'Navigation__library'
+          'Navigation__playlist'
+          'Navigation__devices';
+  grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+  gap: 2em;
+  overflow-y: auto;
+
+  &__logo-box {
+    align-items: center;
+    display: flex;
+    grid-area: Navigation__logo-box;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 2.5em;
+  }
+
+  &__heading {
+    margin-left: .5em;
+  }
+
+  &__list-heading {
+    margin-bottom: .8em;
+    margin-left: 4.7em;
+
+    &-text {
+      color: $nav-heading-color;
+    }
+  }
+
+  &__menu {
+    grid-area: Navigation__menu;
+  }
+
+  &__library {
+    grid-area: Navigation__library;
+  }
+
+  &__playlist {
+    grid-area: Navigation__playlist;
+  }
+
+  &__devices {
+    grid-area: Navigation__devices;
+  }
+
+  &__item {
+    border-right: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    font-size: .8em;
+    font-weight: bold;
+    padding: 1em;
+    transition: color .3s ease-in-out, border-right-color .3s ease-in-out;
+
+    &-name {
+      margin-left: 1em;
+    }
+
+    &:hover {
+      border-right-color: $item-active-color;
+      color: $item-active-color;
+    }
+
+    &-logo {
+      margin-left: 3.4em;
+      font-size: 1.2em;
+    }
+  }
+
+  &__item-list {
+    list-style-type: none;
+  }
+}

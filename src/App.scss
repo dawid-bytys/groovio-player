@@ -1,0 +1,64 @@
+//Font import
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+//Color variables
+$white-color: #fff;
+$spinner-bg-color: #18181d;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  color: $white-color;
+  display: grid;
+  grid-template-areas: 'Navigation Main';
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Loading {
+  animation: spinnerLeaving 2.02s linear;
+  background: $spinner-bg-color;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+
+  &__spinner {
+    animation: spinnerLeaving 2.02s linear;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 5em;
+  }
+}
+
+@keyframes spinnerLeaving {
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

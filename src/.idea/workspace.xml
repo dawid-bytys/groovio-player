@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="09018cdf-64b3-4768-9b1a-51877b6a742f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main/Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main/Main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navigation/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/Navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navigation/Navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/Navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Player/Player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Player/Player.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Player/Player.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Player/Player.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Profile/Profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Profile/Profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Search/Search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Search/Search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/bolt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/disc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/mic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/my-albums.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/radio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/repeat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/nav-icons/speaker.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1mCmApJkakK9bPT6QdbsTKzZYyk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09018cdf-64b3-4768-9b1a-51877b6a742f" name="Default Changelist" comment="" />
+      <created>1609005806367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609005806367</updated>
+      <workItem from="1609005807928" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

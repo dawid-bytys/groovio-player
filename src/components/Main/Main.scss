@@ -1,0 +1,70 @@
+$main-bg-color: #18181d;
+$white-color: #fff;
+$player-bg-color: #5773ff;
+
+.Main {
+  background-image: url('../../content/artist-background/sb.jpg');
+  background-position: 100% -200px;
+  background-size: cover;
+  display: grid;
+  grid-area: Main;
+  grid-template-areas: 'Main__upper' 'Main__tiles-box';
+  grid-template-rows: 40% 1fr;
+  overflow-y: auto;
+  position: relative;
+
+  &::before {
+    background: linear-gradient(
+      0deg,
+      rgba(24, 24, 29, 1) 55%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    content: '';
+    height: 100%;
+    position: fixed;
+    width: 100%;
+  }
+
+  &__upper {
+    grid-area: Main__upper;
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__tiles-box {
+    display: grid;
+    gap: 1em 1em;
+    grid-area: Main__tiles-box;
+    grid-template-areas:
+      'TopArtists TopArtists Player'
+      'Genres TopCharts Player';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2em;
+    z-index: 1000;
+
+    /*@media (max-width: 2560px) {
+      height: 800px;
+    }
+
+    @media (max-width: 1920px) {
+      height: 550px;
+    }
+
+    @media (max-width: 1250px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      'TopArtists TopArtists'
+      'Genres TopCharts'
+      'Player Player';
+    }*/
+  }
+}

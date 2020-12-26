@@ -1,0 +1,98 @@
+$tiles-bg-color: #202026;
+$player-bg-color: #5773ff;
+$white-color: #fff;
+$icon-color: #8a8a8a;
+
+.Player {
+  background-color: $tiles-bg-color;
+  border-radius: 1em;
+  display: grid;
+  grid-area: Player;
+  grid-template-areas: 'Player__top' 'Player__bottom';
+  grid-template-rows: 330px 1fr;
+
+
+  &__top {
+    grid-area: Player__top;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: .9em;
+    font-weight: bold;
+    margin: 1.5em 0 0 1.5em;
+  }
+
+  &__queue-btn-box {
+    float: right;
+    margin: .7em .7em 0 0;
+    padding: 1em;
+  }
+
+  &__bottom {
+    background-color: $player-bg-color;
+    border-radius: 1em 1em 0 0;
+    grid-area: Player__bottom;
+  }
+
+  &__loop-btn-box,
+  &__backward-btn-box,
+  &__play-btn-box,
+  &__forward-btn-box,
+  &__shuffle-btn-box,
+  &__pause-btn-box,
+  &__queue-btn-box {
+    background: none;
+    border: 0;
+    color: $white-color;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .3s, transform .2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: translateY(.3em);
+    }
+  }
+
+  &__controls {
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 'Player__loop-btn-box Player__backward-btn-box Player__play-btn-box Player__forward-btn-box Player__shuffle-btn-box';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 80px;
+    margin-top: 3em;
+    width: 100%;
+  }
+
+  &__loop-btn-box {
+    grid-area: Player__loop-btn-box;
+  }
+
+  &__backward-btn-box {
+    grid-area: Player__backward-btn-box;
+  }
+
+  &__play-btn-box {
+    grid-area: Player__play-btn-box;
+  }
+
+  &__pause-btn-box {
+    grid-area: Player__play-btn-box;
+  }
+
+  &__forward-btn-box {
+    grid-area: Player__forward-btn-box;
+  }
+
+  &__shuffle-btn-box {
+    grid-area: Player__shuffle-btn-box;
+  }
+}
