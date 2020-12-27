@@ -1,6 +1,8 @@
 $main-bg-color: #18181d;
 $white-color: #fff;
 $player-bg-color: #5773ff;
+$results-bg-color: #25252d;
+$results-border-color: #494a4b;
 
 .Main {
   background-image: url('../../content/artist-background/sb.jpg');
@@ -33,9 +35,10 @@ $player-bg-color: #5773ff;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 2em 2em 0;
     position: absolute;
     width: 100%;
+    z-index: 1000;
   }
 
   &__tiles-box {
@@ -66,5 +69,56 @@ $player-bg-color: #5773ff;
       'Genres TopCharts'
       'Player Player';
     }*/
+  }
+
+  &__results {
+    border: 2px solid $results-border-color;
+    border-radius: 10px;
+    left: 2em;
+    max-height: 30%;
+    overflow-y: auto;
+    position: absolute;
+    top: 6em;
+    width: 250px;
+    z-index: 1000;
+  }
+
+  &__result-box {
+    border-bottom: 2px solid $results-border-color;
+    display: grid;
+    grid-template-areas: 'Main__result-image Main__result-name';
+    grid-template-columns: 50px 1fr
+  }
+
+  &__result-box:last-child {
+    border: 0;
+  }
+
+  &__result-image {
+    grid-area: Main__result-image;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__result-btn {
+    align-items: center;
+    background-color: $results-bg-color;
+    border: 0;
+    color: $white-color;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    font-weight: bold;
+    grid-area: Main__result-name;
+    justify-content: center;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: lighten($results-bg-color, 5%);
+    }
   }
 }

@@ -15,6 +15,7 @@ $input-text-color: #a5a9ab;
   text-indent: 3em;
   transition: border-color .3s;
   width: 250px;
+  z-index: 1000;
 
   &__input {
     background: none;

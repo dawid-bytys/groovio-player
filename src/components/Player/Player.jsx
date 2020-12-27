@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Player.scss";
 
-const Player = () => {
+const Player = props => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     const switchPlaying = () => {
